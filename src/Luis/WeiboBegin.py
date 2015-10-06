@@ -16,7 +16,8 @@ class WeiboBegin(object):
     def fastlogin(self):
         home_url = 'http://www.weibo.cn'
         req = urllib2.Request(home_url) 
-        req.add_header('User-Agent', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)')
+        #Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+        req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0')
         #ckjar = cookielib.MozillaCookieJar(os.path.join('C:\Documents and Settings\tom\Application Data\Mozilla\Firefox\Profiles\h5m61j1i.default', 'cookies.txt'))
         ckjar = cookielib.MozillaCookieJar()
         #这里读取cookie
@@ -27,7 +28,7 @@ class WeiboBegin(object):
                 print "Value:"+item.value
         ckproc = urllib2.HTTPCookieProcessor(ckjar)
         opener = urllib2.build_opener(ckproc)
-        f = opener.open(req) 
+        f = opener.open(req,timeout=90)
         htm = f.read().decode('utf-8')
         print htm
         for item in ckjar:

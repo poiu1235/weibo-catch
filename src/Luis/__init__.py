@@ -13,4 +13,6 @@ import ConnSQL
 import Relation
 import Wuser
 import Werror
+
+import Mailsender
 #__all__ = ['Module1', 'Module2', 'Package2']

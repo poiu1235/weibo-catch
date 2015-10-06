@@ -1,7 +1,7 @@
 # weibo-catch
 
 if you want to use this code running in your computer
-you need a computer with a ubuntu operator system and mysql db management system
+you need a computer with a ubuntu operation system and mysql db management system
 
 you need create database by use the create db code(in mysql)
 you need to replace the '111111' placeholder to other necessary string which 
