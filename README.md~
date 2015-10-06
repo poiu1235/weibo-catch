@@ -4,26 +4,11 @@ if you want to use this code running in your computer
 you need a computer with a ubuntu operation system and mysql db management system
 
 you need create database by use the create db code(in mysql)
+you need to replace the '111111' placeholder to other necessary string which 
+asking is decribled in explanatory note.(press the keyboard ctrl+f to find them in every file)
+they always are passwords or accounts.
 
-you need create a file named 'localconfig' used to record the account information
-and its format like follows:
-#------------------------------------
-[weibo]
-weibouser=xxxxxxxx
-weibopwd=xxxxxxxx
-
-[db]
-dbsite=xxxxxxxx
-dbuser=xxxxxxxx
-dbpwd=xxxxxxxx
-
-[email]
-emailuser=xxxxxxxx
-emailpwd=xxxxxxxx
-emailhost=smtp.163.com #xxxxxxxx
-emailrec=xxxxxxxx
-#-------------------------------------
-project describtion:
+project explaination:
 The weibo-catch is a kind of spider in Weibo(Sina).
 I want to catch two kind of data from weibo:
 one is follows,which is people interested in some people,cooperation,or field.
